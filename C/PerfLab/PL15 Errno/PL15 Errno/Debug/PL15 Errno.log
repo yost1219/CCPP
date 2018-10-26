@@ -1,0 +1,7 @@
+﻿  PL15 Errno.c
+c:\users\student\source\repos\visualstudio\projects\perflabs\pl15 errno\pl15 errno\pl15 errno.c(47): warning C4013: 'assert' undefined; assuming extern returning int
+c:\users\student\source\repos\visualstudio\projects\perflabs\pl15 errno\pl15 errno\pl15 errno.c(37): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\student\source\repos\visualstudio\projects\perflabs\pl15 errno\pl15 errno\pl15 errno.c(37): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\student\source\repos\visualstudio\projects\perflabs\pl15 errno\pl15 errno\pl15 errno.c(106): warning C4101: 'errStr': unreferenced local variable
+PL15 Errno.obj : error LNK2019: unresolved external symbol _assert referenced in function _main
+C:\Users\Student\Source\Repos\VisualStudio\Projects\PerfLabs\PL15 Errno\Debug\PL15 Errno.exe : fatal error LNK1120: 1 unresolved externals
