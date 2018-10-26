@@ -1,0 +1,3 @@
+﻿  inventory.cpp
+c:\users\student\source\repos\visualstudio\c++\projects\cpp capstone inventory\cpp capstone inventory\inventory.cpp(47): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Cpp Capstone Inventory.vcxproj -> C:\Users\Student\Source\Repos\VisualStudio\C++\Projects\Cpp Capstone Inventory\Debug\Cpp Capstone Inventory.exe

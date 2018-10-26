@@ -1,0 +1,7 @@
+﻿  combat.cpp
+c:\users\student\source\repos\visualstudio\c++\projects\cpp capstone combat\cpp capstone combat\combat.cpp(1483): warning C4326: return type of 'main' should be 'int' instead of 'void'
+c:\users\student\source\repos\visualstudio\c++\projects\cpp capstone combat\cpp capstone combat\combat.cpp(1484): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\student\source\repos\visualstudio\c++\projects\cpp capstone combat\cpp capstone combat\combat.cpp(2780): warning C4129: ' ': unrecognized character escape sequence
+c:\users\student\source\repos\visualstudio\c++\projects\cpp capstone combat\cpp capstone combat\combat.cpp(2890): warning C4129: '_': unrecognized character escape sequence
+c:\users\student\source\repos\visualstudio\c++\projects\cpp capstone combat\cpp capstone combat\combat.cpp(2902): warning C4129: '(': unrecognized character escape sequence
+  Cpp Capstone Combat.vcxproj -> C:\Users\Student\Source\Repos\VisualStudio\C++\Projects\Cpp Capstone Combat\Debug\Cpp Capstone Combat.exe
