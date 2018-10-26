@@ -1,0 +1,4 @@
+﻿  source2.c
+c:\users\student\source\repos\visual studio\projects\demolabs\demolab11-littleinteger\demolab11-littleinteger\source2.c(54): warning C4047: '=': 'int *' differs in levels of indirection from 'int'
+c:\users\student\source\repos\visual studio\projects\demolabs\demolab11-littleinteger\demolab11-littleinteger\source2.c(58): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+  DemoLab11-LittleInteger.vcxproj -> C:\Users\Student\Source\Repos\Visual Studio\Projects\DemoLabs\DemoLab11-LittleInteger\Debug\DemoLab11-LittleInteger.exe

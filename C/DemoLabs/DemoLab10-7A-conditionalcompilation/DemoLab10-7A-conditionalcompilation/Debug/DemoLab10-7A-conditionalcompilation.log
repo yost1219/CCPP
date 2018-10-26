@@ -1,0 +1,4 @@
+﻿  DemoLab10-7A.c
+c:\users\student\source\repos\visual studio\projects\demolabs\demolab10-7a-conditionalcompilation\demolab10-7a-conditionalcompilation\demolab10-7a.c(28): warning C4047: 'function': 'const char *const ' differs in levels of indirection from 'int'
+c:\users\student\source\repos\visual studio\projects\demolabs\demolab10-7a-conditionalcompilation\demolab10-7a-conditionalcompilation\demolab10-7a.c(28): warning C4024: 'printf': different types for formal and actual parameter 1
+  DemoLab10-7A-conditionalcompilation.vcxproj -> C:\Users\Student\Source\Repos\Visual Studio\Projects\DemoLabs\DemoLab10-7A-conditionalcompilation\Debug\DemoLab10-7A-conditionalcompilation.exe
