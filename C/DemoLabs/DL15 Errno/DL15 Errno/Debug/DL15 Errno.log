@@ -1,0 +1,7 @@
+﻿  endoftheline.c
+c:\users\student\source\repos\visualstudio\projects\demolabs\dl15 errno\dl15 errno\endoftheline.c(49): warning C4129: 'W': unrecognized character escape sequence
+c:\users\student\source\repos\visualstudio\projects\demolabs\dl15 errno\dl15 errno\endoftheline.c(49): warning C4129: 'N': unrecognized character escape sequence
+c:\users\student\source\repos\visualstudio\projects\demolabs\dl15 errno\dl15 errno\endoftheline.c(54): warning C4013: 'sqrt' undefined; assuming extern returning int
+c:\users\student\source\repos\visualstudio\projects\demolabs\dl15 errno\dl15 errno\endoftheline.c(54): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\student\source\repos\visualstudio\projects\demolabs\dl15 errno\dl15 errno\endoftheline.c(64): warning C4101: 'errStr': unreferenced local variable
+  DL15 Errno.vcxproj -> C:\Users\Student\Source\Repos\VisualStudio\Projects\DemoLabs\DL15 Errno\Debug\DL15 Errno.exe

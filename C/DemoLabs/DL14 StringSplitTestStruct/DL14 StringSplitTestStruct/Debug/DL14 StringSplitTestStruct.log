@@ -1,0 +1,3 @@
+﻿  StringSplitTestStruct.c
+c:\users\student\source\repos\visual studio\projects\demolabs\dl14 stringsplitteststruct\dl14 stringsplitteststruct\stringsplitteststruct.c(204): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'FunctionTest *'
+  DL14 StringSplitTestStruct.vcxproj -> C:\Users\Student\Source\Repos\Visual Studio\Projects\DemoLabs\DL14 StringSplitTestStruct\Debug\DL14 StringSplitTestStruct.exe
