@@ -1,0 +1,4 @@
+﻿  PerfLab8A.c
+c:\users\student\desktop\githubuploads\visual studio\projects\perflabs\perflab8a\perflab8a\perflab8a.c(94): warning C4018: '<': signed/unsigned mismatch
+c:\users\student\desktop\githubuploads\visual studio\projects\perflabs\perflab8a\perflab8a\perflab8a.c(125): warning C4716: 'clearInput': must return a value
+  PerfLab8A.vcxproj -> C:\Users\Student\Desktop\gitHubUploads\Visual Studio\Projects\PerfLabs\PerfLab8A\Debug\PerfLab8A.exe
