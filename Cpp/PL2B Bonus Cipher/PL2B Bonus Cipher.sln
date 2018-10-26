@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PL2B Bonus Cipher", "PL2B Bonus Cipher\PL2B Bonus Cipher.vcxproj", "{1B087067-8562-4455-A579-D2BEE418E61B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B087067-8562-4455-A579-D2BEE418E61B}.Debug|x64.ActiveCfg = Debug|x64
+		{1B087067-8562-4455-A579-D2BEE418E61B}.Debug|x64.Build.0 = Debug|x64
+		{1B087067-8562-4455-A579-D2BEE418E61B}.Debug|x86.ActiveCfg = Debug|Win32
+		{1B087067-8562-4455-A579-D2BEE418E61B}.Debug|x86.Build.0 = Debug|Win32
+		{1B087067-8562-4455-A579-D2BEE418E61B}.Release|x64.ActiveCfg = Release|x64
+		{1B087067-8562-4455-A579-D2BEE418E61B}.Release|x64.Build.0 = Release|x64
+		{1B087067-8562-4455-A579-D2BEE418E61B}.Release|x86.ActiveCfg = Release|Win32
+		{1B087067-8562-4455-A579-D2BEE418E61B}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C2615E1-E643-4B87-94EB-8A1C88F7827D}
+	EndGlobalSection
+EndGlobal
