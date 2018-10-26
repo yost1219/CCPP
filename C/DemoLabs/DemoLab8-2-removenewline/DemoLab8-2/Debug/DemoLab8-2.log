@@ -1,0 +1,5 @@
+﻿  DemoLab8-2.c
+c:\users\student\desktop\githubuploads\visual studio\projects\demolabs\demolab8-2\demolab8-2\demolab8-2.c(82): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\student\desktop\githubuploads\visual studio\projects\demolabs\demolab8-2\demolab8-2\demolab8-2.c(82): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\student\desktop\githubuploads\visual studio\projects\demolabs\demolab8-2\demolab8-2\demolab8-2.c(128): warning C4018: '<': signed/unsigned mismatch
+  DemoLab8-2.vcxproj -> C:\Users\Student\Desktop\gitHubUploads\Visual Studio\Projects\DemoLabs\DemoLab8-2\Debug\DemoLab8-2.exe
