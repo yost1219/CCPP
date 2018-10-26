@@ -1,0 +1,541 @@
+#include <iostream>
+#include <conio.h>
+#include <windows.h>
+#include <cstdlib>
+#include "classes.h"
+
+using namespace std;
+
+HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE); // used for goto
+COORD CursorPosition; // used for goto
+
+void gotoXY(int, int);
+void clear_menu(); //may need to use this
+
+//player initialization
+Player1 player1;
+//item initialization
+Weapon1 weapon1;
+Weapon2 weapon2;
+Weapon3 weapon3;
+Weapon4 weapon4;
+Weapon5 weapon5;
+Weapon6 weapon6;
+Armor1 armor1;
+Armor2 armor2;
+Armor3 armor3;
+Armor4 armor4;
+Armor5 armor5;
+Armor6 armor6;
+Consumable1 consumable1;
+Consumable2 consumable2;
+Consumable3 consumable3;
+Consumable4 consumable4;
+Consumable5 consumable5;
+Consumable6 consumable6;
+
+int main() //int shop();
+{
+	int main_menu_item = 0, run, x = 7;
+	int buy_menu_item = 0;
+	int weapon_menu_item = 0;
+	int armor_menu_item = 0;
+	int consumable_menu_item = 0;
+	int sell_menu_item = 0;
+	bool main_menu = true; //for main shop menu
+	bool buy_menu = true; //for buy menu
+	bool weapon_menu = true; //buy
+	bool armor_menu = true; //buy
+	bool consumable_menu = true; //buy
+	bool sell_menu = true; //for sell menu
+
+	clear_menu(); //replace all text with blank spaces
+	gotoXY(18, 5); std::cout << "Welcome to Space-Mart.  Get your stuff and get out!";
+	gotoXY(18, 7); std::cout << "->";
+
+
+//start Main menu
+	while (main_menu)
+	{
+		gotoXY(20, 7); std::cout << "1) Buy";
+		gotoXY(20, 8); std::cout << "2) Sell";
+		gotoXY(20, 9); std::cout << "3) Leave" << std::endl;
+
+		system("pause>nul"); //the >nul bit causes it to print no message
+
+		if (GetAsyncKeyState(VK_DOWN) && x != 9) //down button pressed, won't change if x is already at the bottom position
+		{
+			gotoXY(18, x); std::cout << "  ";
+			x++;
+			gotoXY(18, x); std::cout << "->";
+			main_menu_item++;
+			continue;
+
+		}
+
+		if (GetAsyncKeyState(VK_UP) && x != 7) //up button pressed, won't change if x is already at the top position
+		{
+			gotoXY(18, x); std::cout << "  ";
+			x--;
+			gotoXY(18, x); std::cout << "->";
+			main_menu_item--;
+			continue;
+		}
+
+		if (GetAsyncKeyState(VK_RETURN)) { // Enter key pressed
+
+			switch (main_menu_item) {
+
+			case 0: { //buy            
+				clear_menu();
+				buy_menu = true; //make sure this is on in case they have left the buy menu
+				x = 7; //reinitialize x value
+				gotoXY(18, 5); std::cout << "Buy something, will ya?";
+				gotoXY(18, 7); std::cout << "->";
+				//start buy sub-menu
+				while (buy_menu)
+				{
+					gotoXY(20, 7); std::cout << "1) Weapons";
+					gotoXY(20, 8); std::cout << "2) Armor";
+					gotoXY(20, 9); std::cout << "3) Consumables";
+					gotoXY(20, 10); std::cout << "4) Back" << std::endl;
+
+					system("pause>nul");
+
+					if (GetAsyncKeyState(VK_DOWN) && x != 10) //down button pressed, won't change if x is already at the bottom position
+					{
+						gotoXY(18, x); std::cout << "  ";
+						x++;
+						gotoXY(18, x); std::cout << "->";
+						buy_menu_item++;
+						continue;
+
+					}
+
+					if (GetAsyncKeyState(VK_UP) && x != 7) //up button pressed, won't change if x is already at the top position
+					{
+						gotoXY(18, x); std::cout << "  ";
+						x--;
+						gotoXY(18, x); std::cout << "->";
+						buy_menu_item--;
+						continue;
+					}
+
+					if (GetAsyncKeyState(VK_RETURN)) { // Enter key pressed
+
+						switch (buy_menu_item) {
+
+						case 0: { //weapons
+							clear_menu();
+							weapon_menu = true; //make sure this is on in case they just left the weapons menu
+							x = 7; //reinitialize x value
+							gotoXY(18, 5); std::cout << "That's not a weapon.  THESE are weapons.";
+							gotoXY(18, 7); std::cout << "->";
+							//start weapon sub-menu
+							while (weapon_menu)
+							{
+								gotoXY(20, 7); std::cout << "1) Item 1";
+								gotoXY(20, 8); std::cout << "2) Item 2";
+								gotoXY(20, 9); std::cout << "3) Item 3";
+								gotoXY(20, 10); std::cout << "4) Item 4";
+								gotoXY(20, 11); std::cout << "5) Item 5";
+								gotoXY(20, 12); std::cout << "6) Item 6";
+								gotoXY(20, 13); std::cout << "7) Back" << std::endl;
+
+								system("pause>nul");
+
+								if (GetAsyncKeyState(VK_DOWN) && x != 13) //down button pressed, won't change if x is already at the bottom position
+								{
+									gotoXY(18, x); std::cout << "  ";
+									x++;
+									gotoXY(18, x); std::cout << "->";
+									weapon_menu_item++;
+									continue;
+
+								}
+
+								if (GetAsyncKeyState(VK_UP) && x != 7) //up button pressed, won't change if x is already at the top position
+								{
+									gotoXY(18, x); std::cout << "  ";
+									x--;
+									gotoXY(18, x); std::cout << "->";
+									weapon_menu_item--;
+									continue;
+								}
+
+								if (GetAsyncKeyState(VK_RETURN)) { // Enter key pressed
+
+									switch (weapon_menu_item) {
+
+									case 0: { //item 1
+										std::cout << "item 1 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 1: { //item 2
+										std::cout << "item 2 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 2: { //item 3
+										std::cout << "item 3 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 3: { //item 4
+										std::cout << "item 4 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 4: { //item 5
+										std::cout << "item 5 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 5: { //item 6
+										std::cout << "item 6 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 6: { //back
+										clear_menu();
+										x = 7; //reinitialize x value
+										gotoXY(18, 5); std::cout << "I can't believe I got outta bed for this.";
+										gotoXY(18, 7); std::cout << "->";
+
+										weapon_menu = false;
+										break;
+									}
+									} //close weapon menu switch
+								}
+							} //close weapon menu
+							break;
+						} //close case 0
+						case 1: { //armor
+							clear_menu();
+							armor_menu = true; //make sure this is on in case they just exited the armor menu
+							x = 7; //reinitialize x value
+							gotoXY(18, 5); std::cout << "You call that armor?  My neice could punch through those rags.";
+							gotoXY(18, 7); std::cout << "->";
+							//start armor sub-menu
+							while (armor_menu)
+							{
+								//item name - stat modifier (attack, a/c, misc.) - cost
+								gotoXY(20, 7); std::cout << "1) Item 1";
+								gotoXY(20, 8); std::cout << "2) Item 2";
+								gotoXY(20, 9); std::cout << "3) Item 3";
+								gotoXY(20, 10); std::cout << "4) Item 4";
+								gotoXY(20, 11); std::cout << "5) Item 5";
+								gotoXY(20, 12); std::cout << "6) Item 6";
+								gotoXY(20, 13); std::cout << "7) Back" << std::endl;
+
+								system("pause>nul");
+
+								if (GetAsyncKeyState(VK_DOWN) && x != 13) //down button pressed, won't change if x is already at the bottom position
+								{
+									gotoXY(18, x); std::cout << "  ";
+									x++;
+									gotoXY(18, x); std::cout << "->";
+									armor_menu_item++;
+									continue;
+
+								}
+
+								if (GetAsyncKeyState(VK_UP) && x != 7) //up button pressed, won't change if x is already at the top position
+								{
+									gotoXY(18, x); std::cout << "  ";
+									x--;
+									gotoXY(18, x); std::cout << "->";
+									armor_menu_item--;
+									continue;
+								}
+
+								if (GetAsyncKeyState(VK_RETURN)) { // Enter key pressed
+
+									switch (armor_menu_item) {
+
+									case 0: { //item 1
+										std::cout << "item 1 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 1: { //item 2
+										std::cout << "item 2 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 2: { //item 3
+										std::cout << "item 3 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 3: { //item 4
+										std::cout << "item 4 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 4: { //item 5
+										std::cout << "item 5 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 5: { //item 6
+										std::cout << "item 6 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 6: { //back
+										clear_menu();
+										x = 7; //reinitialize x value
+										gotoXY(18, 5); std::cout << "Hurry it up.  You're cutting into my naptime.";
+										gotoXY(18, 7); std::cout << "->";
+
+										armor_menu = false;
+									}
+									} //close armor menu switch
+								}
+							} //close armor menu
+							break;
+						} //close case 1
+						case 2: { //consumable
+							clear_menu();
+							consumable_menu = true; //make sure this is on in case they left the consumable menu
+							x = 7; //reinitialize x value
+							gotoXY(18, 5); std::cout << "Eh, I'm not using these.  Might as well sell 'em to this fool.";
+							gotoXY(18, 7); std::cout << "->";
+							//start consumable sub-menu
+							while (consumable_menu)
+							{
+								gotoXY(20, 7); std::cout << "1) Item 1";
+								gotoXY(20, 8); std::cout << "2) Item 2";
+								gotoXY(20, 9); std::cout << "3) Item 3";
+								gotoXY(20, 10); std::cout << "4) Item 4";
+								gotoXY(20, 11); std::cout << "5) Item 5";
+								gotoXY(20, 12); std::cout << "6) Item 6";
+								gotoXY(20, 13); std::cout << "7) Back" << std::endl;
+
+								system("pause>nul");
+
+								if (GetAsyncKeyState(VK_DOWN) && x != 13) //down button pressed, won't change if x is already at the bottom position
+								{
+									gotoXY(18, x); std::cout << "  ";
+									x++;
+									gotoXY(18, x); std::cout << "->";
+									consumable_menu_item++;
+									continue;
+								}
+
+								if (GetAsyncKeyState(VK_UP) && x != 7) //up button pressed, won't change if x is already at the top position
+								{
+									gotoXY(18, x); std::cout << "  ";
+									x--;
+									gotoXY(18, x); std::cout << "->";
+									consumable_menu_item--;
+									continue;
+								}
+
+								if (GetAsyncKeyState(VK_RETURN)) { // Enter key pressed
+
+									switch (consumable_menu_item) {
+
+									case 0: { //item 1
+										std::cout << "item 1 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 1: { //item 2
+										std::cout << "item 2 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 2: { //item 3
+										std::cout << "item 3 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 3: { //item 4
+										std::cout << "item 4 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 4: { //item 5
+										std::cout << "item 5 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 5: { //item 6
+										std::cout << "item 6 selected";
+										//take money
+										//give item
+										break;
+									}
+									case 6: { //back
+										clear_menu();
+										x = 7; //reinitialize x value
+										gotoXY(18, 5); std::cout << "No window shopping.  Buy something or get out!";
+										gotoXY(18, 7); std::cout << "->";
+
+										consumable_menu = false;
+									}
+									} //close consumable menu switch
+								}
+							} //close consumable menu
+							break;
+						} //close case 2
+						case 3: { //leave buy menu
+							clear_menu();
+							x = 7; //reinitialize x value
+							gotoXY(18, 5); std::cout << "You don't want to give me any more of your money?";
+							gotoXY(18, 7); std::cout << "->";
+							buy_menu = false;
+						} //close case 3
+						} //close buy menu switch
+					} //close buy menu if statement
+				} //close buy menu
+				break;
+			} //close case 0 from main menu
+			case 1: { //sell
+				//open/load player inventory/backpack
+				clear_menu();
+				sell_menu = true; //make sure this is on in case they left the sell menu
+				x = 7; //reinitialize x value
+				gotoXY(18, 5); std::cout << "You expect me to pay you?  For that?!";
+				gotoXY(18, 7); std::cout << "->";
+				//start sell sub-menu
+				while (sell_menu)
+				{
+					gotoXY(20, 7); std::cout << "1) Weapon";
+					gotoXY(20, 8); std::cout << "2) Armor";
+					gotoXY(20, 9); std::cout << "3) Backpack1";
+					gotoXY(20, 10); std::cout << "4) Backpack2";
+					gotoXY(20, 11); std::cout << "5) Backpack3";
+					gotoXY(20, 12); std::cout << "6) Backpack4";
+					gotoXY(20, 13); std::cout << "7) Back" << std::endl;
+
+					system("pause>nul");
+
+					if (GetAsyncKeyState(VK_DOWN) && x != 13) //down button pressed, won't change if x is already at the bottom position
+					{
+						gotoXY(18, x); std::cout << "  ";
+						x++;
+						gotoXY(18, x); std::cout << "->";
+						sell_menu_item++;
+						continue;
+
+					}
+
+					if (GetAsyncKeyState(VK_UP) && x != 7) //up button pressed, won't change if x is already at the top position
+					{
+						gotoXY(18, x); std::cout << "  ";
+						x--;
+						gotoXY(18, x); std::cout << "->";
+						sell_menu_item--;
+						continue;
+					}
+
+					if (GetAsyncKeyState(VK_RETURN)) { // Enter key pressed
+
+						switch (sell_menu_item) {
+
+						case 0: { //item 1
+							std::cout << "item 1 selected";
+							//take item
+							//give money
+							break;
+						}
+						case 1: { //item 2
+							std::cout << "item 2 selected";
+							//take item
+							//give money
+							break;
+						}
+						case 2: { //item 3
+							std::cout << "item 3 selected";
+							//take item
+							//give money
+							break;
+						}
+						case 3: { //item 4
+							std::cout << "item 4 selected";
+							//take item
+							//give money
+							break;
+						}
+						case 4: { //item 5
+							std::cout << "item 5 selected";
+							//take item
+							//give money
+							break;
+						}
+						case 5: { //item 6
+							std::cout << "item 6 selected";
+							//take item
+							//give money
+							break;
+						}
+						case 6: { //back
+							clear_menu();
+							x = 7; //reinitialize x value
+							gotoXY(18, 5); std::cout << "None of your other junk is worth anything, anyway?";
+							gotoXY(18, 7); std::cout << "->";
+
+							sell_menu = false;
+						}
+						} //close sell menu switch
+					} //close sell menu if statement
+				} //close sell menu
+				break;
+			} //close case 1 from menu
+//exit shop
+			case 2: { //leave
+				clear_menu();
+				gotoXY(20, 16);
+				std::cout << "Good, get out of here.";
+				main_menu = false;
+			}
+			}
+		}
+	}
+	while (1);
+	return 0;
+}
+
+void gotoXY(int x, int y)
+{
+	CursorPosition.X = x;
+	CursorPosition.Y = y;
+	SetConsoleCursorPosition(console, CursorPosition);
+}
+
+void clear_menu()
+{
+	gotoXY(18, 4); std::cout << "                                                                                     ";
+	gotoXY(18, 5); std::cout << "                                                                                     ";
+	gotoXY(18, 6); std::cout << "                                                                                     ";
+	gotoXY(18, 7); std::cout << "                                                                                     ";
+	gotoXY(18, 8); std::cout << "                                                                                     ";
+	gotoXY(18, 9); std::cout << "                                                                                     ";
+	gotoXY(18, 10); std::cout << "                                                                                     ";
+	gotoXY(18, 11); std::cout << "                                                                                     ";
+	gotoXY(18, 12); std::cout << "                                                                                     ";
+	gotoXY(18, 13); std::cout << "                                                                                     ";
+	gotoXY(18, 14); std::cout << "                                                                                     ";
+	gotoXY(18, 15); std::cout << "                                                                                     ";
+}
