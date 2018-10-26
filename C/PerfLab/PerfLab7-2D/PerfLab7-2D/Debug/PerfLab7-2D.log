@@ -1,0 +1,7 @@
+﻿  PerfLab7-2D.c
+c:\users\student\desktop\visual studio\projects\perflabs\perflab7-2d\perflab7-2d\perflab7-2d.c(49): error C2143: syntax error: missing ')' before ';'
+c:\users\student\desktop\visual studio\projects\perflabs\perflab7-2d\perflab7-2d\perflab7-2d.c(28): warning C4476: 'printf' : unknown type field character ',' in format specifier
+c:\users\student\desktop\visual studio\projects\perflabs\perflab7-2d\perflab7-2d\perflab7-2d.c(46): warning C4476: 'printf' : unknown type field character '%' in format specifier
+c:\users\student\desktop\visual studio\projects\perflabs\perflab7-2d\perflab7-2d\perflab7-2d.c(46): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\student\desktop\visual studio\projects\perflabs\perflab7-2d\perflab7-2d\perflab7-2d.c(46): note: placeholders and their parameters expect 2 variadic arguments, but 3 were provided
+c:\users\student\desktop\visual studio\projects\perflabs\perflab7-2d\perflab7-2d\perflab7-2d.c(49): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'double'
