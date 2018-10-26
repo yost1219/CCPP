@@ -1,0 +1,4 @@
+﻿  SurfinBirdTestStruct.c
+c:\users\student\source\repos\visual studio\projects\perflabs\pl14 surfinbirdteststruct\pl14 surfinbirdteststruct\surfinbirdteststruct.c(97): warning C4552: '+': result of expression not used
+c:\users\student\source\repos\visual studio\projects\perflabs\pl14 surfinbirdteststruct\pl14 surfinbirdteststruct\surfinbirdteststruct.c(118): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'char *'
+  PL14 SurfinBirdTestStruct.vcxproj -> C:\Users\Student\Source\Repos\Visual Studio\Projects\PerfLabs\PL14 SurfinBirdTestStruct\PL14 SurfinBirdTestStruct\Debug\PL14 SurfinBirdTestStruct.exe
